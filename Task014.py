@@ -16,7 +16,7 @@ def task():
     n = enter_num()
     pow = 0
     res = 0
-    while res < n:
+    while res <= n:
         res = 2 ** pow
         pow += 1
         if res > n:
@@ -25,3 +25,14 @@ def task():
         print(res, end = ' ')
 
 task()
+
+
+'''
+Пример идеального решения
+
+n = int(input())
+i = 0
+while 2 ** i <= n:
+    print(2 ** i)
+    i += 1
+'''
